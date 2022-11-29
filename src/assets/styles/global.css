@@ -6,6 +6,7 @@
 @import url(./clerk-form.css);
 @import url(./client.css);
 @import url(./client-form.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     font-size: 62.5%;
@@ -23,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -40,6 +42,7 @@ header.menu {
     position: fixed;
     left: 4.7rem;
     background-color: var(--secondary-color);
+    z-index: 1;
 }
 
 nav.navigation {
@@ -49,6 +52,7 @@ nav.navigation {
     left: 0;
     top: 0;
     background-color: var(--secondary-color);
+    z-index: 1;
 }
 
 aside.sidebar {
