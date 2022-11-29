@@ -1,0 +1,61 @@
+@import url(./main.css);
+@import url(./menu.css);
+@import url(./cart.css);
+@import url(./calendar.css);
+@import url(./clerk.css);
+@import url(./clerk-form.css);
+@import url(./client.css);
+@import url(./client-form.css);
+
+:root {
+    font-size: 62.5%;
+    
+    --primary-color: #f65a4c;
+    --secondary-color: #0c2b28;
+    --primary-bg-color: #121212;
+    --secondary-bg-color: #242424;
+    --input-bg-color: #3d3d3d;
+    --text-color: #e6e6e6;
+    --btn-bg-color: #e4e1b6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+header.menu {
+    width: 100%;
+    height: 7.2rem;
+    position: fixed;
+    left: 4.7rem;
+    background-color: var(--secondary-color);
+}
+
+nav.navigation {
+    width: 4.8rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--secondary-color);
+}
+
+aside.sidebar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

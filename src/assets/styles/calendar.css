@@ -1,0 +1,78 @@
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+span h2 {
+    margin-block: 3.2rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.4rem;
+}
+
+form {
+    margin-bottom: 6.4rem;
+    width: 90%;
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    border-radius: 1rem;
+    border: 0.3rem solid var(--primary-color);
+}
+
+fieldset.form-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3.2rem;
+    margin-block: 1.6rem;
+    border: none;
+}
+
+span h3 {
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-block: 1.6rem;
+}
+
+div.input-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input.name-client, input.date-reserve, input.time-reserve {
+    margin-block: 2.4rem;
+    margin-inline: 1.6rem;
+    width: 24rem;
+    height: 4.8rem;
+    background-color: var(--input-bg-color);
+    color: var(--primary-color);
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 0.6rem;
+}
+
+input::placeholder {
+    color: var(--primary-color);
+}
+
+input.btn-submit {
+    margin-block: 4.8rem;
+    width: 12rem;
+    height: 3.2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
