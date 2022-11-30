@@ -18,6 +18,7 @@
     --input-bg-color: #3d3d3d;
     --text-color: #e6e6e6;
     --btn-bg-color: #e4e1b6;
+    --text-price-color: #57DBCE;
 }
 
 * {
@@ -60,6 +61,74 @@ aside.sidebar {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-inline: 0.2rem;
+    
 }
+
+ul.sidebar-list-item li button img {
+    margin-block: 3.2rem;
+    margin-inline: 1.2rem;
+}
+
+button.btn-menu-burguer{
+    background: none;
+    border: none;
+}
+
+button.btn-menu-burguer img:hover{
+    cursor: pointer;
+}
+
+ul.sidebar-list-item li a img {
+    margin-block: 3.2rem;
+    list-style: none;
+    margin-inline: 1.2rem;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+span.title-footer h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    padding-block: 5rem;
+    padding-inline: 8.5rem;
+}
+
+div.content-footer{
+    width: 100%;
+    height: 50%;
+    background-color: var(--secondary-bg-color);
+}
+
+div.content-footer span{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    padding-inline: 8.5rem;
+}
+
+div.content-footer span h3{
+    text-decoration: underline;
+    text-decoration: underline solid var(--primary-color) 0.2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+div.content-footer span p{
+    text-decoration: underline;
+    text-decoration: underline solid var(--text-price-color) 0.2rem;
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 0.6rem;
+}
+
