@@ -45,7 +45,7 @@ div.input-content {
     align-items: center;
 }
 
-input.name-clerk, input.cpf-clerk, input.email-clerk, input.tel-clerk, select {
+.name-clerk, .cpf-clerk, .email-clerk, .tel-clerk, select {
     margin-block: 2.4rem;
     margin-inline: 1.6rem;
     width: 24rem;
@@ -60,7 +60,7 @@ input::placeholder {
     color: var(--primary-color);
 }
 
-input.btn-submit {
+.btn-submit {
     margin-block: 4.8rem;
     width: 12rem;
     height: 3.2rem;
