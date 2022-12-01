@@ -2,6 +2,7 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-inline: 15rem;
 }
 
 span h2 {
