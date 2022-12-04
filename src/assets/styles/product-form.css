@@ -54,7 +54,7 @@ div.input-content {
     align-items: center;
 }
 
-.name-clerk, .cpf-clerk, .email-clerk, .tel-clerk, select {
+.name-product, .value-product, .amount-product, .description-product, .id-provider, .id-category {
     margin-block: 2.4rem;
     margin-inline: 1.6rem;
     width: 24rem;

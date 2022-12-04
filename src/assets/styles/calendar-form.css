@@ -54,7 +54,7 @@ div.input-content {
     align-items: center;
 }
 
-.name-clerk, .cpf-clerk, .email-clerk, .tel-clerk, select {
+.name-client, .cpf-client, .date-reserve, .time-reserve, .number-reserve {
     margin-block: 2.4rem;
     margin-inline: 1.6rem;
     width: 24rem;

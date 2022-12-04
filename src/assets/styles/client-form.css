@@ -1,8 +1,10 @@
 section {
+    margin-inline: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-inline: 15rem;
+    justify-content: center;
+    align-items: center;
 }
 
 span h2 {
@@ -14,21 +16,25 @@ span h2 {
 }
 
 form {
-    margin-bottom: 6.4rem;
-    width: 90%;
+    padding-inline: 1.6rem;
+    width: 75%;
+    height: 50%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6.4rem;
     background-color: var(--secondary-bg-color);
     border-radius: 1rem;
     border: 0.3rem solid var(--primary-color);
-    position: relative;
 }
 
 fieldset.form-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-inline: 3.2rem;
-    margin-block: 1.6rem;
     border: none;
 }
 
@@ -41,6 +47,7 @@ span h3 {
 }
 
 div.input-content {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;

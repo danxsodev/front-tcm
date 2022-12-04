@@ -64,21 +64,80 @@
         </aside>
     </nav>
     
-    <section class="client">
-        <span>
-            <h2>Cliente</h2>
-        </span>
+    <main>
+        <section class="client">
+            <span>
+                <h2>Clientes</h2>
 
-        <div class="content-list-client">
-            <ul>
-                <ul>
-                    <li><a href="./client-select.html">Cosulta se o cliente possui cadastro</a></li>
-                    <li><a href="./client-insert.html">Cadastrar Cliente</a></li>
-                    <li><a href="./client-update.html">Atualizar dados do Cliente</a></li>
-                    <li><a href="./client-delete.html">Excluir Cliente</a></li>
-                </ul>
-            </ul>
-        </div>
-    </section>
+                <h3>Registros dos clientes</h3>
+
+                <h4>Criar, atualizar, excluir registros dos clientes</h4>
+            </span>
+
+            <a href="./client-insert.html">Criar cadastro do cliente</a>
+
+
+            <table class="table-select-list">
+                <tr>
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                </tr>
+
+                <!--@foreach (var item in Model) {-->
+                <tr>
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+                    
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                        <a href="./client-update.html">Editar</a>
+                        <!--("Editar", "Atualizar", new {id = item.id_usuario})--> 
+
+                        |
+
+                        <a href="./client-delete.html">Excluir</a>
+                        
+                        <!--("Excluir", "Delete", new {id=item.id_usuario})-->
+                    </td>
+                </tr>
+                <!--}-->
+
+            </table>
+
+        </section>
+    </main>
 </body>
 </html>

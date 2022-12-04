@@ -11,9 +11,9 @@
 
 <body>
     <header class="menu">
-        <a href="" class="logo">
+        <span class="logo">
             <img src="../assets/images/logo.svg" alt="">
-        </a>
+        </span>
     </header>
 
     <nav class="navigation">
@@ -26,37 +26,37 @@
                 </li>
 
                 <li>
-                    <a href="../../index.html"> 
+                    <a href="../../index.html">
                         <img src="../assets/images/menu-home.svg" alt="">
                     </a>
                 </li>
 
                 <li>
-                    <a href="../public/menu.html"> 
+                    <a href="./menu.html">
                         <img src="../assets/images/menu-rice.svg" alt="">
                     </a>
                 </li>
 
                 <li>
-                    <a href="../public/cart.html"> 
+                    <a href="./cart.html">
                         <img src="../assets/images/menu-cart.svg" alt="">
                     </a>
-                </li>
-
+                </li> 
+                    
                 <li>
-                    <a href="../public/calendar.html"> 
+                    <a href="./calendar.html">
                         <img src="../assets/images/menu-calendar.svg" alt="">
                     </a>
                 </li>
 
                 <li>
-                    <a href="../public/clerk.html"> 
+                    <a href="./clerk.html">
                         <img src="../assets/images/menu-clerk.svg" alt="">
                     </a>
                 </li>
 
                 <li>
-                    <a href="../public/client.html"> 
+                    <a href="./client.html">
                         <img src="../assets/images/menu-client.svg" alt="">
                     </a>
                 </li>
@@ -64,27 +64,81 @@
         </aside>
     </nav>
 
-    <section>
-        <span>
-            <h2>Agendar</h2>
-        </span>
+    <main>
+        <section class="calendar">
+            <span>
+                <h2>Agendar</h2>
 
-       <form action="" method="post">
-            <fieldset class="form-content">
-                <span>
-                    <h3>Agendar a reserva</h3>
-                </span>
+                <h3>Tabela de Registros das reservas</h3>
 
-                <div class="input-content">
-                    <input type="text" name="name-client" id="name-client" class="name-client" placeholder="Nome do cliente..." required>
-                    <input type="date" name="date-reserve" id="date-reserve" class="date-reserve" required>
-                    <input type="time" name="time-reserve" id="time-reserve" class="time-reserve" required>
+                <h4>Criar, atualizar, excluir agendamento das reservas</h4>
+            </span>
 
-                    <input type="submit" value="Agendar" id="btn-submit-schedule" class="btn-submit">
-                </div>
+            <a href="./calendar-insert.html">Criar agendamento da reserva</a>
 
-            </fieldset>
-       </form>
-    </section>
+
+            <table class="table-select-list">
+                <tr>
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                
+                    <th>
+                        <!--@Html.DisplayNameFor(model => model.)-->
+                    </th>
+                </tr>
+
+                <!--@foreach (var item in Model) {-->
+                <tr>
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                    <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+                    
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+
+                    <td>
+                        <a href="./calendar-update.html">Editar</a>
+                        <!--("Editar", "Atualizar", new {id = item.id_usuario})--> 
+
+                        |
+
+                        <a href="./calendar-delete.html">Excluir</a>
+                        
+                        <!--("Excluir", "Delete", new {id=item.id_usuario})-->
+                    </td>
+                </tr>
+                <!--}-->
+
+            </table>
+
+        </section>
+    </main>
+
 </body>
 </html>
