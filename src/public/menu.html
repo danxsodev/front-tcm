@@ -73,11 +73,11 @@
                 <!--@foreach (var item in Model) {-->
                     <div class="card">
                         <span>
-                            <img src="@item." alt="" class="image-product">
+                            <img src="" alt="" class="image-product">
                         </span>
             
                         <span class="menu-description">
-                            <h4 class="product-name">@item.</h4>
+                            <h4 class="product-name">--</h4>
                             <p>Descrição</p>
                         </span>
             
@@ -86,11 +86,49 @@
                                 <img src="../assets/images/btn-cart.svg" alt="">
                             </button>
             
-                            <h5 class="price">@item.</h5>
+                            <h5 class="price">--</h5>
                         </span>
                     </div>
                 <!--}-->
             </div>
+        </section>
+
+        <dialog class="modal-card">
+            <span class="modal-product-img">
+                <img src="">
+            </span>
+
+            <div class="modal-content-card-cart-item">
+                <span class="cart-item-nome">--</span>
+                <div class="pizzaInfo--price">
+                    <div class="pizzaInfo--actualPrice">R$ --</div>
+                    <div class="pizzaInfo--qtarea">
+                        <button class="pizzaInfo--qtmenos">-</button>
+                        <div class="pizzaInfo--qt">1</div>
+                        <button class="pizzaInfo--qtmais">+</button>
+                    </div>
+                </div>
+
+                <div class="cart-item-quantity">
+                    <button class="cart-item-quantity-less">-</button>
+                    <span class="item-quantity">1</span>
+                    <button class="cart-item-quantity-more">+</button>
+                </div>
+            </div>
+        </dialog>
+
+        <section class="cart">
+            <aside class="cart-box">
+                <div class="content-card-cart-item">
+                    <img src="">
+                    <span class="cart-item-nome">--</span>
+                    <div class="cart-item-quantity">
+                        <button class="cart-item-quantity-less">-</button>
+                        <span class="item-quantity">1</span>
+                        <button class="cart-item-quantity-more">+</button>
+                    </div>
+                </div>
+            </aside>
         </section>
     </main>
 
