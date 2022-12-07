@@ -70,9 +70,30 @@
             <div class="content-card" >
                 <h3>Pratos Principais</h3>
 
+                <!--@foreach (var item in Model) {-->
+                    <div class="card">
+                        <span>
+                            <img src="@item." alt="" class="image-product">
+                        </span>
+            
+                        <span class="menu-description">
+                            <h4 class="product-name">@item.</h4>
+                            <p>Descrição</p>
+                        </span>
+            
+                        <span class="content-cart-price">
+                            <button key="@item." class="add-to-cart">
+                                <img src="../assets/images/btn-cart.svg" alt="">
+                            </button>
+            
+                            <h5 class="price">@item.</h5>
+                        </span>
+                    </div>
+                <!--}-->
             </div>
         </section>
     </main>
+
 
 
     <script src="../script/main.js"></script>

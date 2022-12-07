@@ -1,5 +1,6 @@
 section {
     margin-inline: auto;
+    padding-block: calc(4rem + var(--height-header));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,6 +40,7 @@ fieldset.form-content {
 }
 
 span h3 {
+    padding-inline: 2rem;
     justify-content: center;
     text-align: center;
     color: var(--text-color);
@@ -47,7 +49,7 @@ span h3 {
 }
 
 div.input-content {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +59,7 @@ div.input-content {
 .name-clerk, .cpf-clerk, .email-clerk, .tel-clerk, select {
     margin-block: 2.4rem;
     margin-inline: 1.6rem;
-    width: 24rem;
+    width: 22rem;
     height: 4.8rem;
     background-color: var(--input-bg-color);
     color: var(--primary-color);

@@ -38,33 +38,12 @@ function loadCard() {
     const contentCard = document.getElementsByClassName("content-card");
     itemsCart.map((item)=>{
 
-        console.log(item.id)
-        console.log(item.nameProduct)
-        console.log(item.imageProduct)
-        console.log(item.priceProduct)
-        console.log(item.quantityProduct)
+        var productID = document.getElementsByClassName("add-to-cart") = item.id;
+        var productName = document.getElementsByClassName("product-name") = item.nameProduct;
+        var productImage = document.getElementsByClassName("image-product") = item.imageProduct;
+        var productPrice = document.getElementsByClassName("price") = item.priceProduct;
+        /*var productQuantity = document.getElementsByClassName("").value = item.quantityProduct;*/
 
-        contentCard.innerHMTL+= `
-        <div class="card">
-            <span class="menu-img">
-                <img src="`+item.imageProduct+`" alt="">
-            </span>
-
-            <span class="menu-description">
-                <h4>`+item.nameProduct+`</h4>
-                <p>Descrição</p>
-            </span>
-
-            <span class="content-cart-price">
-                <button key="`+item.id+`" class="add-to-cart">
-                    <img src="../assets/images/menu-cart.svg" alt="">
-                </button>
-
-                <h5 class="price">`+item.priceProduct+`</h5>
-            </span>
-        </div>
-        `;
-        
     })
 }
 
@@ -73,11 +52,6 @@ const btnAddCart = document.getElementsByClassName("add-to-cart");
 function addItemsCart() {
     const contentCardCart = document.getElementsByClassName("content-card-cart");
     itemsCart.map((item)=>{
-
-        console.log(item.nameProduct)
-        console.log(item.imageProduct)
-        console.log(item.priceProduct)
-        console.log(item.quantityProduct)
 
         if (item.quantityProduct > 0) {
             
