@@ -1,9 +1,7 @@
-section.calendar {
+section {
     width: 100%;
     height: 100%;
     margin-inline: auto;
-    padding-block: calc(2rem + var(--height-header));
-    padding-inline: calc(2rem + var(--width-nav));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,3 +31,8 @@ table.table-select-list {
     text-align: left;
 }
 
+th.field {
+    padding: 0.5rem;
+    border: 0.2rem solid var(--btn-bg-color);
+    margin: 2rem;
+}

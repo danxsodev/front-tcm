@@ -19,11 +19,6 @@
     <nav class="navigation">
         <aside class="sidebar">
             <ul class="sidebar-list-item">
-                <li>
-                    <button class="btn-menu-burguer">
-                        <img src="../assets/images/menu-burguer.svg" alt="">
-                    </button>
-                </li>
                 
                 <li>
                     <a href="../../index.html"> 
@@ -38,7 +33,7 @@
                 </li>
 
                 <li>
-                    <a href="../public/cart.html"> 
+                    <a href="../public/product.html"> 
                         <img src="../assets/images/menu-cart.svg" alt="">
                     </a>
                 </li>
@@ -67,74 +62,32 @@
     <main>
         <section class="menu-card">
 
-            <div class="content-card" >
+            <div class="card-content">
                 <h3>Pratos Principais</h3>
 
-                <!--@foreach (var item in Model) {-->
-                    <div class="card">
-                        <span>
-                            <img src="" alt="" class="image-product">
-                        </span>
-            
-                        <span class="menu-description">
-                            <h4 class="product-name">--</h4>
-                            <p>Descrição</p>
-                        </span>
-            
-                        <span class="content-cart-price">
-                            <button key="@item." class="add-to-cart">
-                                <img src="../assets/images/btn-cart.svg" alt="">
-                            </button>
-            
-                            <h5 class="price">--</h5>
-                        </span>
-                    </div>
-                <!--}-->
+                <div class="card">
+                    <span class="menu-img">
+                        <img src="../assets/images/" alt="">
+                    </span>
+
+                    <span class="menu-description">
+                        <h4>Title</h4>
+                        <p>Descrição</p>
+                    </span>
+
+                    <span class="content-cart-price">
+                        <button class="add-to-cart">
+                            <img src="../assets/images/menu-cart.svg" alt="">
+                        </button>
+
+                        <h5 class="price">R$XX,XX</h5>
+                    </span>
+                </div>
+
             </div>
-        </section>
 
-        <dialog class="modal-card">
-            <span class="modal-product-img">
-                <img src="">
-            </span>
-
-            <div class="modal-content-card-cart-item">
-                <span class="cart-item-nome">--</span>
-                <div class="pizzaInfo--price">
-                    <div class="pizzaInfo--actualPrice">R$ --</div>
-                    <div class="pizzaInfo--qtarea">
-                        <button class="pizzaInfo--qtmenos">-</button>
-                        <div class="pizzaInfo--qt">1</div>
-                        <button class="pizzaInfo--qtmais">+</button>
-                    </div>
-                </div>
-
-                <div class="cart-item-quantity">
-                    <button class="cart-item-quantity-less">-</button>
-                    <span class="item-quantity">1</span>
-                    <button class="cart-item-quantity-more">+</button>
-                </div>
-            </div>
-        </dialog>
-
-        <section class="cart">
-            <aside class="cart-box">
-                <div class="content-card-cart-item">
-                    <img src="">
-                    <span class="cart-item-nome">--</span>
-                    <div class="cart-item-quantity">
-                        <button class="cart-item-quantity-less">-</button>
-                        <span class="item-quantity">1</span>
-                        <button class="cart-item-quantity-more">+</button>
-                    </div>
-                </div>
-            </aside>
         </section>
     </main>
-
-
-
-    <script src="../script/main.js"></script>
-
+    
 </body>
 </html>

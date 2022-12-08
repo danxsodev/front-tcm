@@ -19,11 +19,6 @@
     <nav class="navigation">
         <aside class="sidebar">
             <ul class="sidebar-list-item">
-                <li>
-                    <button class="btn-menu-burguer">
-                        <img src="../assets/images/menu-burguer.svg" alt="">
-                    </button>
-                </li>
 
                 <li>
                     <a href="../../index.html">
@@ -38,7 +33,7 @@
                 </li>
 
                 <li>
-                    <a href="./cart.html">
+                    <a href="./product.html">
                         <img src="../assets/images/menu-cart.svg" alt="">
                     </a>
                 </li> 
@@ -73,71 +68,71 @@
 
                 <h4>Criar, atualizar, excluir agendamento das reservas</h4>
             </span>
-
+            
             <a href="./calendar-insert.html">Criar agendamento da reserva</a>
-
 
             <table class="table-select-list">
                 <tr>
-                    <th>
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
-
-                    <th>
+    
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
-
-                    <th>
+    
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
-
-                    <th>
+    
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
-                
-                    <th>
+                    
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
                 </tr>
-
+    
                 <!--@foreach (var item in Model) {-->
                 <tr>
                     <td>
                         <!--@Html.DisplayFor(modelItem => item.)-->
                     </td>
-
-                    <td>
-                    <!--@Html.DisplayFor(modelItem => item.)-->
-                    </td>
-
-                    <td>
-                    <!--@Html.DisplayFor(modelItem => item.)-->
-                    </td>
-
-                    <td>
-                    <!--@Html.DisplayFor(modelItem => item.)-->
-                    </td>
-                    
+    
                     <td>
                         <!--@Html.DisplayFor(modelItem => item.)-->
                     </td>
-
+    
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+    
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+                        
+                    <td>
+                        <!--@Html.DisplayFor(modelItem => item.)-->
+                    </td>
+    
                     <td>
                         <a href="./calendar-update.html">Editar</a>
                         <!--("Editar", "Atualizar", new {id = item.id_usuario})--> 
-
+    
                         |
-
+    
                         <a href="./calendar-delete.html">Excluir</a>
-                        
+                            
                         <!--("Excluir", "Delete", new {id=item.id_usuario})-->
                     </td>
                 </tr>
                 <!--}-->
-
+    
             </table>
 
         </section>
+
     </main>
 
 </body>

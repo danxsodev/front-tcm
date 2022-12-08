@@ -19,11 +19,6 @@
     <nav class="navigation">
         <aside class="sidebar">
             <ul class="sidebar-list-item">
-                <li>
-                    <button class="btn-menu-burguer">
-                        <img src="../assets/images/menu-burguer.svg" alt="">
-                    </button>
-                </li>
 
                 <li>
                     <a href="../../index.html"> 
@@ -38,7 +33,7 @@
                 </li>
 
                 <li>
-                    <a href="../public/cart.html"> 
+                    <a href="../public/product.html"> 
                         <img src="../assets/images/menu-cart.svg" alt="">
                     </a>
                 </li>
@@ -71,36 +66,41 @@
 
                 <h3>Registros dos funcionários</h3>
 
-                <h4>Criar, atualizar, excluir registros dos funcionários</h4>
+                <h4>Login e cadastro dos funcionários</h4>
             </span>
 
             <a href="./clerk-login.html">Login do funcionário</a>
+
             <a href="./clerk-insert.html">Criar cadastro do funcionário</a>
 
 
             <table class="table-select-list">
+
                 <tr>
-                    <th>
+                    <th class="field">
+                        Nome
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
 
-                    <th>
+                    <th class="field">
+                        Cargo do Funcionário
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
 
-                    <th>
+                    <th class="field">
+                        Telefone
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
 
-                    <th>
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
-                
-                    <th>
+                    
+                    <th class="field">
                         <!--@Html.DisplayNameFor(model => model.)-->
                     </th>
                 </tr>
-
+                
                 <!--@foreach (var item in Model) {-->
                 <tr>
                     <td>
@@ -123,16 +123,6 @@
                         <!--@Html.DisplayFor(modelItem => item.)-->
                     </td>
 
-                    <td>
-                        <a href="./clerk-update.html">Editar</a>
-                        <!--("Editar", "Atualizar", new {id = item.id_usuario})--> 
-
-                        |
-
-                        <a href="./clerk-delete.html">Excluir</a>
-                        
-                        <!--("Excluir", "Delete", new {id=item.id_usuario})-->
-                    </td>
                 </tr>
                 <!--}-->
 

@@ -1,87 +1,191 @@
-section.home {
+/* mobile first */
+
+@media only screen and (max-width: 60rem) {
+  section.home {
     width: 100%;
-    height: 100%;
-    padding-block: calc(4rem + var(--height-header));
-    padding-inline: calc(8rem + var(--width-nav));
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    position: relative;
+    padding-inline: calc(2rem + var(--width-nav));
     top: 0;
     left: 0;
-    z-index: -1;
+  }
+
+  section.home div.slideshow {
+    width: 100%;
+    margin-block: 2rem;
+  }
+} 
+
+/* desktop */
+section.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline-start: calc(var(--width-nav) + 2rem);
+  padding-inline-end: 2rem;
 }
 
 div.section-home-text {
-    width: 100%;
-    font-size: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block-start: var(--height-header);
+}
 
+div.section-home-text h3 {
+  margin-block-end: 1rem;
 }
 
 section.home div.slideshow {
-    width: 90%;
-    height: 60%;
-    margin-block: 3.2rem;
-    display: flex;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  margin-block: 2rem;
+  border-radius: 0.5rem;
+  background: url(../images/prato4-slide.jpg) center/cover no-repeat;
 }
 
-section.home div.slideshow figure.content-slider {
-    width: 100%;
+span.bg-slideshow {
+  width: 100%;
+  height: 100%;
+  background: url(../images/prato4-slide.jpg) center/cover no-repeat;
+  animation: pass-slide 10000ms infinite;
 }
 
-section.home div.slideshow figure.content-slider span.slide img {
-    width: 75%;
-    border-radius: 1rem;
-    justify-content: center;
-    align-items: center;
+@keyframes pass-slide {
+  25% {
+    background: url(../images/prato1-slide.jpg) center/cover;
+  }
+
+  50% {
+    background: url(../images/prato2-slide.jpg) center/cover;
+  }
+
+  75% {
+    background: url(../images/prato3-slide.jpg) center/cover;
+  }
+
+  100% {
+    background: url(../images/prato4-slide.jpg) center/cover;
+  }
 }
 
-section.about{
+/* about */
 
-    width: 100%;
-    height: 100vh;
-    padding-block: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: var(--text-color);
+section.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-inline-start: calc(var(--width-nav) + 2rem);
+  padding-inline-end: 2rem;
+  padding-block: 2rem;
+  justify-content: center;
 }
 
-section.about span h3{
-    margin-top: 10rem;
-    text-align: center;
-    padding-left: 60%;
-    padding-block: 5rem;
-    max-height: 50vh;
+div.content-about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-inline: 0.5rem;
+  padding-block: 1rem;
+  margin: 1rem;
 }
 
-section.about img{
-    width: 60rem;
+div.content-about div.content-about-text {
+  text-align: justify;
+  width: 100%;
 }
 
-.content-about{
-    width: 50%;
+div.content-about div.content-about-text h2 {
+  text-align: center;
+}
+
+div.content-about span.content-about-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.content-about span.content-about-img img {
+  width: 25rem;
+}
+
+/* media queries */
+@media only screen and (min-width: 280px) {
+  div.content-about div.content-about-text p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  div.content-about div.content-about-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.content-about span.content-about-img img {
+    width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  div.content-about div.content-about-text p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  div.content-about span.content-about-img img {
+    width: 28rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  div.content-about {
+    flex-direction: row;
     height: 100%;
-    left: 8.5rem;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding-block: 5rem;
+    justify-content: space-between;
+  }
+
+  div.content-about span.content-about-img img {
+    width: 40rem;
+  }
+
+  div.content-about div.content-about-text h2 {
+    text-align: left;
+    height: 100%;
+    font-size: 6rem;
+  }
+
+  div.content-about div.content-about-text p {
+    text-align: left;
+    height: 100%;
+    font-size: 2.5rem;
+  }
 }
 
-.content-about h2{
-    font-size: 6.4rem;
+@media only screen and (min-width: 1140px) {
+  div.content-about span.content-about-img img {
+    width: 44rem;
+  }
 }
 
-.content-about p{
-    font-size: 2.4rem;
+@media only screen and (min-width: 1200px) {
+  div.content-about span.content-about-img img {
+    width: 46rem;
+  }
 }

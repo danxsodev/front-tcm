@@ -1,6 +1,5 @@
 section {
     margin-inline: auto;
-    padding-block: calc(4rem + var(--height-header));
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,7 +8,8 @@ section {
 }
 
 span h2 {
-    margin-block: 3.2rem;
+    padding-top: var(--height-header);
+    margin-block: 2.4rem;
     justify-content: center;
     text-align: center;
     color: var(--text-color);

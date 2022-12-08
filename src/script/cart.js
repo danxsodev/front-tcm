@@ -344,3 +344,4 @@ atualizarCarrinho()
 fecharCarrinho()
 finalizarCompra()
 // /aula 06
+
